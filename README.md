@@ -38,12 +38,12 @@ in YOLOv3/model/yolo_model.py
 # 3. YOLOv3/cfg/yolo.cfg 파일 수정
 우리가 학습시킨 yolo.cfg파일로 수정
 
-# yad2k.py: python file to convert darknet weight file to keras h5 file. 
-# The yad2k.py was modifiled from allanzelener/YAD2K
-# converted weighted file will be located at ./YOLOv3/data/yolo.h5
+yad2k.py: python file to convert darknet weight file to keras h5 file. 
+The yad2k.py was modifiled from allanzelener/YAD2K
+converted weighted file will be located at ./YOLOv3/data/yolo.h5
 !python ./YOLOv3/yad2k.py ./YOLOv3/cfg/yolo.cfg yolov3.weights ./YOLOv3/data/yolo.h5
 
-# run follow command to show the demo. The result can be found in images/res folder
+run follow command to show the demo. The result can be found in images/res folder
 %cd YOLOv3
 !dir
 !python demo.py
